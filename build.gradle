@@ -1,0 +1,62 @@
+/**
+*   This file was generated automatically by the 'createModuleBuild' task.
+*   Created at: 2023-05-09T14:52:55.185527Z.
+*
+*   WARNING: Do not put your credentials directly in this file.
+*
+*/
+
+group          = "com.etendoerp"
+version        = "1.0.0-SNAPSHOT"
+description    = "This bundle includes modules related to the integration of Etendo ERP with PowerBI."
+ext.artifact   = "etendobi.extensions"
+ext.repository = "https://repo.futit.cloud/repository/maven-snapshots"
+
+configurations {
+    moduleDependencyContainer
+}
+
+publishing {
+    publications {
+        "com.etendoerp.etendobi.extensions"(MavenPublication) {
+            from components.java
+            groupId    = group
+            artifactId = artifact
+            version    = version
+        }
+    }
+    repositories {
+        maven {
+            url "https://repo.futit.cloud/repository/maven-snapshots"
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repo.futit.cloud/repository/maven-snapshots"
+    }
+    maven {
+        url "https://repo.futit.cloud/repository/maven-releases"
+    }
+    maven {
+        url "https://repo.futit.cloud/repository/maven-public-releases"
+    }
+    maven {
+        url "https://repo.futit.cloud/repository/maven-public-jars"
+    }
+}
+
+/**
+* Declare Java dependencies using 'implementation'
+* Ex: implementation "com.sun.mail:javax.mail:1.6.2"
+*/
+dependencies {
+    implementation('com.etendoerp:integration.powerbi:1.0.0-SNAPSHOT')
+    implementation('com.etendoerp:powerbi.inclusion.exclusion:1.0.0-SNAPSHOT')
+
+
+    implementation('com.etendoerp.platform:etendo-core:[22.1.0, 23.2.0)')
+
+}
