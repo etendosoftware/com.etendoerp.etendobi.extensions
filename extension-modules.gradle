@@ -1,5 +1,5 @@
 ext.defaultExtensionModules = [
-        'git@github.com:etendosoftware/com.etendoerp.powerbi.inclusion.exclusion.git',
         'git@github.com:etendosoftware/com.etendoerp.integration.powerbi.git',
         'git@github.com:etendosoftware/com.etendoerp.powerbi.queries.git',
+        'git@github.com:etendosoftware/com.etendoerp.powerbi.inclusion.exclusion.git',
 ]
