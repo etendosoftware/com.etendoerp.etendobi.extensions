@@ -7,7 +7,7 @@
 */
 
 group          = "com.etendoerp"
-version        = "3.1.0"
+version        = "3.2.0"
 description    = "This bundle includes modules related to the integration of Etendo ERP with PowerBI."
 ext.artifact   = "etendobi.extensions"
 ext.repository = "https://maven.pkg.github.com/etendosoftware/com.etendoerp.etendobi.extensions"
@@ -48,8 +48,8 @@ repositories {
 * Ex: implementation "com.sun.mail:javax.mail:1.6.2"
 */
 dependencies {
-    implementation('com.etendoerp:powerbi.inclusion.exclusion:2.1.0')
-    implementation('com.etendoerp:powerbi.queries:2.1.0')
+    implementation('com.etendoerp:powerbi.inclusion.exclusion:2.2.0')
+    implementation('com.etendoerp:powerbi.queries:2.2.0')
 
-    implementation('com.etendoerp.platform:etendo-core:[25.1.0,25.3.0)')
+    implementation('com.etendoerp.platform:etendo-core:[25.1.0,25.4.0)')
 }
