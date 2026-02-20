@@ -1,8 +1,9 @@
 ---
-name: Bug report
+name: Report bug
 about: Template for bug reporting
 title: "[JIRA-ID] Title"
 labels: bug
+type: "Bug 🐛"
 assignees: ''
 
 ---
