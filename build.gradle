@@ -10,7 +10,7 @@ group          = "com.etendoerp"
 version        = "4.0.0"
 description    = "This bundle includes modules related to the integration of Etendo ERP with PowerBI."
 ext.artifact   = "etendobi.extensions"
-ext.repository = "https://maven.pkg.github.com/etendosoftware/com.etendoerp.etendobi.extensions"
+ext.repository = "https://repo.futit.cloud/repository/maven-snapshots"
 apply from: 'extension-modules.gradle'
 
 configurations {
@@ -28,7 +28,7 @@ publishing {
     }
     repositories {
         maven {
-            url "https://maven.pkg.github.com/etendosoftware/com.etendoerp.etendobi.extensions"
+            url "https://repo.futit.cloud/repository/maven-snapshots"
         }
     }
 }
@@ -36,7 +36,7 @@ publishing {
 repositories {
     mavenCentral()
     maven {
-        url "https://maven.pkg.github.com/etendosoftware/com.etendoerp.etendobi.extensions"
+        url "https://repo.futit.cloud/repository/maven-snapshots"
     }
     maven {
         url "https://repo.futit.cloud/repository/maven-public-jars"
@@ -48,8 +48,8 @@ repositories {
 * Ex: implementation "com.sun.mail:javax.mail:1.6.2"
 */
 dependencies {
-    implementation('com.etendoerp:powerbi.inclusion.exclusion:3.0.0')
-    implementation('com.etendoerp:powerbi.queries:3.0.0')
+    implementation('com.etendoerp:powerbi.inclusion.exclusion:3.0.0-SNAPSHOT')
+    implementation('com.etendoerp:powerbi.queries:3.0.0-SNAPSHOT')
 
-    implementation('com.etendoerp.platform:etendo-core:[26.1.0,26.2.0)')
+    implementation('com.etendoerp.platform:etendo-core:[27.1.0,27.2.0)')
 }
